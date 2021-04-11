@@ -26,8 +26,8 @@ header {
   grid-template-columns: auto 10rem auto;
   grid-template-rows: auto 1.5rem;
   grid-template-areas:
-  "left center right"
-  ". center .";
+    "left center right"
+    ". center .";
   margin-bottom: 1.5rem;
 }
 
@@ -79,13 +79,14 @@ main p {
   margin: 0 0 1.5rem;
   font-size: 1.125rem;
 }
+
 h2 {
   margin: 0 0 1.5rem;
   font-family: "PT Sans Narrow", sans-serif;
 }
 
 section {
-  padding:1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 2px solid #afafaf;
   border-top: 2px solid #afafaf;
 }
@@ -108,9 +109,9 @@ section ul li {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "top"
-  "middle"
-  "bottom";
+    "top"
+    "middle"
+    "bottom";
 }
 
 section h3 {
@@ -122,7 +123,7 @@ section h3 {
   z-index: 1;
 }
 
-section li >img {
+section li > img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
@@ -141,11 +142,23 @@ section div {
 }
 
 section div img {
-width: 1em;
-height: 1em;
-margin-right: .5em;
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
 }
 
 section div strong {
   font-weight: normal;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: .875rem;
+  align-items: center;
+}
+
+footer a {
+  color: #000;
 }
